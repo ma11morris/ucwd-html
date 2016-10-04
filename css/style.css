@@ -17,9 +17,7 @@ body {
 
 
 /* === CLEAR FLOATS === */
-.container:after,
-main:after,
-aside:after {
+.container:after {
 	content: " ";
 	clear: both;
 	visibility: hidden;
@@ -65,7 +63,7 @@ nav {
 }
 
 nav ul {
-	margin: 0 0 10px;
+	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	list-style: none;
@@ -81,8 +79,6 @@ nav ul li a {
 	display: block;
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.2);
-	text-decoration: none;
-	color: #FFF;
 }
 
 nav ul li a:hover {
