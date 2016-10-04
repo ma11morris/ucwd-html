@@ -40,7 +40,10 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 20px 0 0;
+	padding: 0;
+	display: inline-block;
+	height: 100px;
+	line-height: 100px;
 }
 
 header a {
@@ -56,7 +59,7 @@ header a:hover {
 
 /* === NAVIGATION === */
 nav {
-	margin: 0;
+	margin: 50px 0 0;
 	padding: 0;
 	float: right;
 }
