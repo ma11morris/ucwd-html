@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>																<!-- Declare the doctype to be HTML5 -->
+
+<html lang="en">															<!-- Begin HTML and declare that the page's content is written in English -->
+
+<head>																	<!-- Begin head -->
+	<title>Bournemouth Xtreme Ironing</title>											<!-- Page's title - appears in browser window top bar and search engines -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">	<!-- Set scaling and viewport handling for responsive design on low resolution user agents-->
+	<meta name="Keywords" content="">										<!-- Keywords for SEO - largely defunct these days -->
+	<meta name="Description" content="">									<!-- Description for SEO and appears in search engine snipets -->
+
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">				<!-- Set our icon file name and location -->
+	<link rel="stylesheet" href="css/style.css">								<!-- Include our style sheet -->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">		<!-- I can't lie, i don't really know for sure but sure we can figure it out -->
+</head>																		<!-- End head -->
+
+<body>																		<!-- Begin body of document -->
+
+	<header id ="top">																<!-- Document header -->
+		<div class="container">
+			<h1><a href="#">Bournemouth Xtreme Ironing</a></h1>
+			<nav>															<!-- Document navigation -->
+				<ul>
+					<li><a href="index.html">Home</a></li>	
+					<li><a href="news.html">News</a></li>
+                                        <li><a href="club.html">Club</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="signup.html">Sign up</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<div class="container">
+		<main>																<!-- Main meat of the document WITHOUT the sidebar -->
+			<section>														<!-- A section -->
+				<h2>Sign up to our website and newsletter</h2>
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name">
+
+                                <label for="email">Email address:</label>
+				<input type="email" name="email" id="email">
+
+				<input type="checkbox" name="newsletter" id="newsletter">
+				<label for="newsletter" class="checkbox">Would you like to receive our weekly newsletter?</label>
+
+				<input type="submit" name="submit" value="Sign up!">
+			</section>
+		</main>
+
+		<aside>																<!-- Sidebar -->
+                        <div class="advert"><img title="The door Board!" alt="Advert for the door board, our best door mounted ironing board yet!"  src="images/ad1.jpg"></div>
+                        <div class="advert"><img title="Tefel - The Best Glide You Can Get!" alt="Advert for Tefel's best smooth glide iron" src="images/ad2.jpg"></div>
+		</aside>
+	</div>
+
+	<footer>																<!-- Documents footer -->
+		<div class="container">
+			<p>&copy; 2016 - Comp1-K / 1</p>
+			<a href="#top">Top &uarr;</a>
+		</div>
+	</footer>
+																			<!-- This is the correct place to put javascript so it doesn't lag DOM rendering -->
+</body>																		<!-- End body of document -->
+</html>																		<!-- End of actual document -->
