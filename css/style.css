@@ -41,7 +41,7 @@ header {
 	margin: 0 0 20px;
 	padding: 0;
 	background: #D00;	
-
+	height: 100px;
 }
 
 header h1 {
@@ -105,11 +105,31 @@ main {
 }
 
 main img {
-	margin: 0 10px 0 0;
+	margin: 0 20px 0 0;
 	padding: 0;
 	float: left;
         border: 1px solid lightgrey;
 	box-shadow: 3px 3px 10px #BBB;
+}
+
+main th,
+main td {
+	padding: 10px;
+}
+
+main tr:nth-child(odd) {
+	background: #EDEDED;
+}
+
+main tr:first-child {
+        background: #CCC;
+}
+
+main tr th:first-child,
+main tr td:first-child,
+main tr th:last-child,
+main tr td:last-child {
+	text-align: center;
 }
 
 article,
@@ -189,4 +209,71 @@ footer a {
 
 footer a:hover{
 	color: #FFF;
+}
+
+
+/* === BREAKS === */
+@media only screen and (max-width : 880px) {
+
+	header {
+		height: 130px;
+	}
+
+	header h1 {
+		line-height: 80px;
+		height: 80px;
+		width: 100%;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+}
+
+@media only screen and (max-width : 650px) {
+
+	main {
+		width: 100%;
+	}	
+
+	aside {
+		margin: 20px 0 0;
+		padding: 50px 0 0;
+		width: 100%;
+		border-top: 2px dashed #AAA;
+	}
+
+	aside .advert {
+		width: 49%;
+		float: left;
+	}
+
+	aside .advert:nth-child(even) {
+		margin: 0 0 0 1%;
+	}
+}
+
+
+@media only screen and (max-width : 500px) {
+
+	header h1 {
+		font-size: 26px;
+	}
+}
+
+@media only screen and (max-width : 420px) {
+
+	header {
+		height: 112px;
+	}
+
+        header h1 {
+                font-size: 21px;
+	}
+
+	nav ul li a {
+		padding: 5px 7px;
+		font-size: 90%;
+	}	
 }
